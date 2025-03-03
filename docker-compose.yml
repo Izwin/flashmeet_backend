@@ -6,7 +6,7 @@ services:
     ports:
       - "3000:3000"
     environment:
-      - MONGO_URI=mongodb://localhost:27017/flashmeet
+      - MONGO_URI=mongodb://mongodb:27017/flashmeet
       - FIREBASE_SERVICE_ACCOUNT_PATH=serviceAccountKey.json
     command: npm start
     depends_on:
